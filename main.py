@@ -1,5 +1,7 @@
 # This code belongs to Maria Juliana Tady
 def encode(user_pass):
+    # the encoder stores the encoded password to a new
+    # variable, with each digit being shifted up by 3 numbers.
     encoded_list = []
     for i in range(0, len(user_pass)):
         encoded_list.append(str(int(user_pass[i] + 3)[-1]))
