@@ -13,17 +13,17 @@ def main():
     print('Menu')
     print("-" * 8)
     user_input = input("\n1. Encode\n2. Decode\n3. Quit\n\nPlease enter an option: ")
-    while user_input != "3":
-        global encode_pass
+    while True:
         if user_input == "1":
             user_pass = input("Please enter your password to encode: ")
             encode_pass = encode(user_pass)
             print(encode_pass)
             print("Your password has been encoded and stored!")
         elif user_input == "2":
-            pass
+            decode_pass = decode(encode_pass)
+            print(f"The encoded password is {encode_pass}, and the original password is {decode_pass}.")
         elif user_input == "3":
-            continue
+            quit()
         else:
             return -1
 
