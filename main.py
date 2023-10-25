@@ -1,3 +1,4 @@
+# This code belongs to Maria Juliana Tady
 def encode(user_pass):
     encoded_list = []
     for i in range(0, len(user_pass)):
